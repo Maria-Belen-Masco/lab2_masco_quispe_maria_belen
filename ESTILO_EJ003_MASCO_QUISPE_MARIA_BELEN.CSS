@@ -1,0 +1,140 @@
+/* ======== CONFIGURACIÓN GENERAL ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f2f4f7;
+    color: #333;
+    background-image: url("imagenes/escudo.jpeg"); /* Cambia por el nombre o ruta de tu imagen */
+    background-size: cover; /* La imagen cubre toda la pantalla */
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.titulo1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* ======== MENÚ DE NAVEGACIÓN ======== */
+.nav-bg {
+    background-color: #00509e;
+}
+
+.navegacion_principal {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0;
+}
+
+.navegacion_principal a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navegacion_principal a:hover {
+    color: #ffcc00;
+}
+
+/* ======== SECCIÓN PRINCIPAL ======== */
+.contenido-hero {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 1.8rem;
+}
+
+/* ======== CONTENEDOR PRINCIPAL ======== */
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* ======== SOMBRA EN EL CUADRO ======== */
+.sombra {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ======== ÁREAS (HTML, CSS, JS) ======== */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+/* === CONFIGURACIÓN DEL CUADRO DE CADA ÁREA === */
+.area {
+    background-color: #f9fafc;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    width: var(--ancho-cuadro, 300px); /* CONFIGURABLE */
+    transition: 0.3s;
+}
+
+.area:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.area h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.area p {
+    margin-bottom: 15px;
+}
+
+/* === CONFIGURACIÓN DE IMÁGENES === */
+.area img {
+    width: var(--ancho-imagen, 200px); /* CONFIGURABLE */
+    height: var(--alto-imagen, 200px); /* CONFIGURABLE */
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.area img:hover {
+    transform: scale(1.05);
+}
+
+/* ======== PIE DE PÁGINA ======== */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
